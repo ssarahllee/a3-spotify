@@ -1,4 +1,4 @@
---Readme document for *YOUR NAME*, *YOUR_EMAIL@uci.edu*--
+--Readme document for Charlotte Huang, CHARLYH3@UCI.EDU and Sarah Lee, YOUR EMAIL HERE--
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
