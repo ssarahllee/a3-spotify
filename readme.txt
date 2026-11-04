@@ -16,6 +16,7 @@
 
 
 3. What online resources did you consult when completing this assignment? (list specific URLs)
+https://www.w3schools.com/tags/att_option_selected.asp
 
 
 
