@@ -8,8 +8,8 @@
     <!--@for(; let first=$first) {
       <app-carousel-card class="carousel-item" [class.active]="first"></app-carousel-card>
     }-->
-     @for(resource of resources; track resource; let first=$first) { // loop through resource array  
-      <app-carousel-card class="carousel-item" [class.active]="first"></app-carousel-card>
+     @for(resource of resources; track resource; let first=$first) {
+      <app-carousel-card class="carousel-item" [class.active]="first" [resource]="resource"></app-carousel-card>
     }
   </div>
   <a class="carousel-control-prev" [attr.data-bs-target]="carouselIdForBinding" data-bs-slide="prev">
