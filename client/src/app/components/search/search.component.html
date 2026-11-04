@@ -15,7 +15,10 @@
 <!--TODO: Display a track-list component if searching for a track. Bind track-list's tracks.-->
 @if (resources) {
   @if (searchCategory == "artist" || searchCategory == "album") {
-    <app-carousel [resources]="resources"></app-carousel>
+    <app-carousel
+      [carouselId]="searchCarousel"
+      [resources]="resources"
+    ></app-carousel>
   } @else if (searchCategory == "track") {
     <app-track-list [tracks]="resources"></app-track-list>
   }
