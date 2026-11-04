@@ -2,9 +2,9 @@
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
-*/10
-- */1 Communicating with the webserver
-- */1 Populating information about the user
+2/10
+- 1/1 Communicating with the webserver
+- 1/1 Populating information about the user
 - */3 Populating the search component
 - */3 Artist page
 - */1.5 Album page
