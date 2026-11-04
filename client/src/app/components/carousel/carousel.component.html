@@ -8,7 +8,7 @@
     <!--@for(; let first=$first) {
       <app-carousel-card class="carousel-item" [class.active]="first"></app-carousel-card>
     }-->
-     @for(resource of resources; track resource; let first=$first) { // loop through resource array  
+     @for(resource of resources; track resource; let first=$first) {
       <app-carousel-card class="carousel-item" [class.active]="first"></app-carousel-card>
     }
   </div>
