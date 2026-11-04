@@ -14,7 +14,7 @@ export class AboutComponent implements OnInit {
 
 
   //TODO: inject the Spotify service
-  constructor() { }
+  constructor(private SpotifyService:SpotifyService) { }
 
   ngOnInit() {
   }
