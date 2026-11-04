@@ -1,6 +1,7 @@
 --Readme document for Charlotte Huang, charlyh3@uci.edcu and Sarah Lee, sarahsl7@uci.edu--
 
 TEST TEST TEST TESTES
+testesteste 
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
