@@ -8,7 +8,8 @@ import { Popularity } from 'src/app/data/popularity';
     standalone: false
 })
 export class ThermometerComponent implements OnInit {
-  //TODO: define Input fields and bind them to the template.
+  //TODO: define Input fields and bind them to the template. add ! to tell TypeScript that popularity will be initialized/assigned before called
+  @Input() popularity!: Popularity;
 
   constructor() { }
 
