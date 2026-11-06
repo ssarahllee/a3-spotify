@@ -7,6 +7,9 @@
 			<img id="albumImg" [src]="album.imageURL">
 			<!--TODO: add thermometer with album's popularity -->
 			<!--TODO: use @for to loop over album artists-->
+			@for (artist of artists; track artist.id){
+				<p>{{artist.name}}</p>
+			}
 			<p>
 				<!--TODO: link to artist page, display artist name-->
 				Artist: <a href="artist.url">{{artist.name}}</a>
@@ -19,6 +22,11 @@
 		<div class="col-12 col-sm-6">
 			<h3>Album Tracks</h3>
 			<!--TODO: display the track list for the album. Hide the artist and album columns because they are redundant on this page.-->
+			<app-track-list>
+				[tracks]="albumTracks"
+				[showArtist]="false"
+				[showAlbum]="false"
+			</app-track-list>
 		</div>
 	</div>
 }
