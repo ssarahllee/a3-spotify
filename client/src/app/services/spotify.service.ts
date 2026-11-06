@@ -84,9 +84,9 @@ export class SpotifyService {
 
   getAlbumsForArtist(artistId: string): Promise<AlbumData[]> {
     //TODO: use the albums for an artist endpoint to make a request to express.
-    var endpoint = "/artist/" + encodeURIComponent(artistId) + "/albums";
+    var endpoint = "/artist-albums/" + encodeURIComponent(artistId);
     return this.sendRequestToExpress(endpoint).then((data) => {
-      return data.albums.map((album: any) => {
+      return data.items.map((album) => {
         return new AlbumData(album);
       });
     });
@@ -102,9 +102,9 @@ export class SpotifyService {
 
   getTracksForAlbum(albumId: string): Promise<TrackData[]> {
     //TODO: use the tracks for album endpoint to make a request to express. have to map track data because we reach into album. albums contain different data, we only want track
-    var endpoint = "/albums/" + encodeURIComponent(albumId) + "/tracks";
+    var endpoint = "/album-tracks/" + encodeURIComponent(albumId);
     return this.sendRequestToExpress(endpoint).then((data) => {
-      return data.tracks.map((track: any) => {
+      return data.items.map((track) => {
         return new TrackData(track);
       });
     });
