@@ -23,12 +23,12 @@ https://www.w3schools.com/jsref/jsref_map.asp
 
 
 4. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
-
+Charlotte Huang and Sarah Lee worked together on this assignment. We met together during the entire duration of working on the project, and discussed 
 
 
 5. Did you add a bonus feature to your submission? If so, what is it and how should we see it?
-
+n/a
 
 
 6. Is there anything special we need to know in order to run your code?
-
+n/a
