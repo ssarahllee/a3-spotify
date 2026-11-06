@@ -19,6 +19,7 @@
 https://www.w3schools.com/tags/att_option_selected.asp
 https://www.w3schools.com/jsref/jsref_encodeuri.asp 
 https://angular.dev/guide/templates/control-flow 
+https://www.w3schools.com/jsref/jsref_map.asp
 
 
 4. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
