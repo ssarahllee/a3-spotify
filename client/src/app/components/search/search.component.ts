@@ -17,6 +17,7 @@ export class SearchComponent implements OnInit {
   searchCategory: string = "artist";
   searchCategories: string[] = ["artist", "album", "track"];
   resources: ResourceData[];
+  displayCategory: string; // we added this; this is for keeping results hidden when search hasnt been entered yet
 
   constructor(private spotifyService: SpotifyService) {}
 
@@ -28,6 +29,7 @@ export class SearchComponent implements OnInit {
       .searchFor(this.searchCategory, this.searchString)
       .then((results: ResourceData[]) => {
         this.resources = results;
+        this.displayCategory = this.searchCategory;
       });
   }
 }

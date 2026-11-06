@@ -14,12 +14,12 @@
 <!--TODO: Display a carousel component if searching for an artist or album. Bind carousel's resources and give it a static carouselId.-->
 <!--TODO: Display a track-list component if searching for a track. Bind track-list's tracks.-->
 @if (resources) {
-  @if (searchCategory == "artist" || searchCategory == "album") {
+  @if (displayCategory == "artist" || displayCategory == "album") {
     <app-carousel
       carouselId="searchCarousel"
       [resources]="resources"
     ></app-carousel>
-  } @else if (searchCategory == "track") {
+  } @else if (displayCategory == "track") {
     <app-track-list [tracks]="resources"></app-track-list>
   }
 }
