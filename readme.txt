@@ -2,13 +2,13 @@
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
-5/10
+8.5/10
 - 1/1 Communicating with the webserver
 - 1/1 Populating information about the user
 - 3/3 Populating the search component
-- */3 Artist page
+- 3/3 Artist page
 - */1.5 Album page
-- */0.5 Track page
+- 0.5/0.5 Track page
 
 
 2. How long, in hours, did it take you to complete this assignment?
@@ -32,4 +32,5 @@ n/a
 
 
 6. Is there anything special we need to know in order to run your code?
-n/a
+- For part 3's definition of the thermometer and the optional aspect of colors, we assumed that instruction meant that
+the base color for the thermometer is optional and therefore excluded it.
