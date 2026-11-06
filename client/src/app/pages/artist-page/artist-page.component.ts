@@ -30,11 +30,11 @@ export class ArtistPageComponent implements OnInit {
     });
     this.artistInfo.getTopTracksForArtist(this.artistId).then((data) => {
       this.topTracks = data;
-      console.log(data);
+      //console.log(data);
     });
     this.artistInfo.getAlbumsForArtist(this.artistId).then((data) => {
       this.albums = data;
-      console.log(data);
+      //console.log(data);
     });
   }
 }
