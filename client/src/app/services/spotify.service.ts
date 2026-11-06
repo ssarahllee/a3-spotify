@@ -84,26 +84,35 @@ export class SpotifyService {
 
   getAlbumsForArtist(artistId: string): Promise<AlbumData[]> {
     //TODO: use the albums for an artist endpoint to make a request to express.
-    // var endpoint = "/album/" + encodeURIComponent(artistId);
-    // return this.sendRequestToExpress(endpoint).then((data) => {
-    //   return new AlbumData(data);
+    var endpoint = "/artist/" + encodeURIComponent(artistId) + "/albums";
+    return this.sendRequestToExpress(endpoint).then((data) => {
+      return data.albums.map((album: any) => {
+        return new AlbumData(album);
+      });
+    });
   }
 
   getAlbum(albumId: string): Promise<AlbumData> {
     //TODO: use the album endpoint to make a request to express.
     var endpoint = "/album/" + encodeURIComponent(albumId);
     return this.sendRequestToExpress(endpoint).then((data) => {
-      return new AlbumData(data);
-    return null as any;
+      return new AlbumData(data)});
   }
 
   getTracksForAlbum(albumId: string): Promise<TrackData[]> {
-    //TODO: use the tracks for album endpoint to make a request to express.
-    return null as any;
+    //TODO: use the tracks for album endpoint to make a request to express. have to map track data because we reach into album. albums contain different data, we only want track
+    var endpoint = "/albums/" + encodeURIComponent(albumId) + "/tracks";
+    return this.sendRequestToExpress(endpoint).then((data) => {
+      return data.tracks.map((track: any) => {
+        return new TrackData(track);
+      });
+    });
   }
 
   getTrack(trackId: string): Promise<TrackData> {
-    //TODO: use the track endpoint to make a request to express.
-    return null as any;
+    //TODO: use the track endpoint to make a request to express. dont need to map, can just directly access track data since we're just reaching into track
+    var endpoint = "/track/" + encodeURIComponent(trackId);
+    return this.sendRequestToExpress(endpoint).then((data) => {
+      return new TrackData(data)});
   }
 }
