@@ -77,6 +77,7 @@ export class SpotifyService {
     var endpoint = "/artist-top-tracks/" + encodeURIComponent(artistId);
     return this.sendRequestToExpress(endpoint).then((data) => {
       return new ArtistData(data);
+      // test tes test test test
     });
   }
 
