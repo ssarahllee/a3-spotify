@@ -76,8 +76,9 @@ export class SpotifyService {
     //TODO: use the top tracks endpoint to make a request to express.
     var endpoint = "/artist-top-tracks/" + encodeURIComponent(artistId);
     return this.sendRequestToExpress(endpoint).then((data) => {
-      return new ArtistData(data);
-      // test tes test test test
+      return data.tracks.map((track) => {
+        return new TrackData(track);
+      });
     });
   }
 
