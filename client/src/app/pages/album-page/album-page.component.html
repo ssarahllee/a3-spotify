@@ -6,6 +6,8 @@
 			<!--TODO: set src to album image URL-->
 			<img id="albumImg" [src]="album.imageURL">
 			<!--TODO: add thermometer with album's popularity -->
+			<app-thermometer [popularity]="album.popularity">
+			</app-thermometer>
 			<!--TODO: use @for to loop over album artists-->
 			@for (artist of artists; track artist.id){
 				<p>
