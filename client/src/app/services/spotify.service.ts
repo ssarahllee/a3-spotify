@@ -96,7 +96,8 @@ export class SpotifyService {
     //TODO: use the album endpoint to make a request to express.
     var endpoint = "/album/" + encodeURIComponent(albumId);
     return this.sendRequestToExpress(endpoint).then((data) => {
-      return new AlbumData(data)});
+      return new AlbumData(data);
+    });
   }
 
   getTracksForAlbum(albumId: string): Promise<TrackData[]> {
@@ -113,6 +114,7 @@ export class SpotifyService {
     //TODO: use the track endpoint to make a request to express. dont need to map, can just directly access track data since we're just reaching into track
     var endpoint = "/track/" + encodeURIComponent(trackId);
     return this.sendRequestToExpress(endpoint).then((data) => {
-      return new TrackData(data)});
+      return new TrackData(data);
+    });
   }
 }
